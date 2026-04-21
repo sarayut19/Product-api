@@ -23,7 +23,7 @@ app.get('/products', async (req, res) => {
   res.json(data)
 })
 
-// POST
+// POST  
 app.post('/products', async (req, res) => {
   const { name, price, description } = req.body
   const { data, error } = await supabase
@@ -35,7 +35,33 @@ app.post('/products', async (req, res) => {
   res.json(data)
 })
 
- 
+// PUT
+app.put('/products/:id', async (req, res) => {
+  const { id } = req.params
+  const { name, price, description } = req.body
+  const { data, error } = await supabase
+    .from('products')
+    .update({ name, price, description })
+    .eq('id', id)
+    .select()
+
+  if (error) return res.status(500).json(error)
+  res.json(data)
+})
+
+// DELETE
+app.delete('/products/:id', async (req, res) => {
+  const { id } = req.params
+  const { data, error } = await supabase
+    .from('products')
+    .delete()
+    .eq('id', id)
+    .select()
+
+  if (error) return res.status(500).json(error)
+  res.json(data)
+})
+
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
