@@ -70,5 +70,9 @@ app.listen(PORT, () => {
 export default app
 
 
-//-----------------------step run terminal ----------------------------//
+//-----------------------step run terminal (สั่งรัน  api index.js)----------------------------//
 //1.  cmd  > node api\index.js
+
+//------------------- user and pass for supabase -------------------//
+// user: myapi 
+//pass: sGIwYGblbuMmWOFt
