@@ -70,9 +70,37 @@ app.listen(PORT, () => {
 export default app
 
 
-//-----------------------step run terminal (สั่งรัน  api index.js)----------------------------//
-//1.  cmd  > node api\index.js
+//1.-----------------------step run terminal (dev เสร็จสั่ง  api index.js)----------------------------//
+//  cmd  > node api\index.js
 
-//------------------- user and pass for supabase -------------------//
+//2.------------------- user and pass for supabase -------------------//
 // user: myapi 
 //pass: sGIwYGblbuMmWOFt
+
+
+//3.------------------- link for supabase (DB) -------------------//
+// https://supabase.com/dashboard/project/wcawhgokamaurmkcalcw/editor/17546?schema=public
+
+//4.------------------- link for frontend api-------------------//
+// https://product-api-1asz.vercel.app/products 
+
+
+//5.------------------- link for postman (TEST) -------------------//
+//5.1 ------------- localhost  (TEST) -------------//
+// GET all: http://localhost:3000/products
+// POST: http://localhost:3000/products
+// PUT: http://localhost:3000/products/:id
+// DELETE: http://localhost:3000/products/:id
+
+//5.2 ------------- vercel  (TEST) -------------//
+// GET all: https://product-api-1asz.vercel.app/products
+// POST: https://product-api-1asz.vercel.app/products
+// PUT: https://product-api-1asz.vercel.app/products/:id
+// DELETE: https://product-api-1asz.vercel.app/products/:id
+
+
+
+
+
+
+
