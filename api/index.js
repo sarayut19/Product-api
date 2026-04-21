@@ -99,6 +99,10 @@ export default app
 // DELETE: https://product-api-1asz.vercel.app/products/:id
 
 
+//6.------------------- link github -------------------//
+//https://github.com/sarayut19/Product-api
+
+
 
 
 
